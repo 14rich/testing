@@ -4,6 +4,7 @@ RUN    apt-get update && \
        apt-get install -y bison dpkg-dev libgdbm-dev wget jq && \
        apt install -y curl && \
        apt install -y rsync && \
+       apt install -y rclone && \
        apt install -y ruby-full && \
        apt-get clean
 
