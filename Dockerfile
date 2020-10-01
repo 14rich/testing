@@ -3,10 +3,11 @@ FROM ubuntu:18.04
 RUN    apt-get update && \
        apt-get install -y bison dpkg-dev libgdbm-dev wget jq && \
        apt install -y curl && \
+       apt install -y rsync grsync && \
        apt install -y ruby-full && \
        apt-get clean
 
-RUN    apt-get install -y build-essential zlibc zlib1g-dev openssl libxslt1-dev libxml2-dev libssl-dev libreadline7 libreadline-dev libyaml-dev libsqlite3-dev sqlite3
+RUN    apt-get install -y awscli build-essential zlibc zlib1g-dev openssl libxslt1-dev libxml2-dev libssl-dev libreadline7 libreadline-dev libyaml-dev libsqlite3-dev sqlite3
 
 RUN    gem install cf-uaac --no-document
 
