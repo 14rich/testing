@@ -40,5 +40,5 @@ RUN    wget -P /usr/local/bin "https://github.com/cloudfoundry/bosh-cli/releases
        mv /usr/local/bin/bosh-cli-6.4.0-linux-amd64 /usr/local/bin/bosh
 
 RUN    wget -P /tmp "https://get.helm.sh/helm-v3.3.4-linux-amd64.tar.gz" && \
-       tar zvxf /tmp/helm-v3.3.4-linux-amd64.tar.gz && \
+       tar zvxf /tmp/helm-v3.3.4-linux-amd64.tar.gz -C \tmp\ && \
        mv /tmp/linux-amd64/helm /usr/local/bin/
